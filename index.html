@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminfo - Instant Medical Info</title>
+    <meta name="description"
+        content="Eminfo is an offline-first Android application designed to provide first responders with instant access to critical medical and contact information.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="header-content">
+                <img src="Assets/eminfo_logo.png" alt="Eminfo Logo" class="app-logo">
+                <div class="app-info">
+                    <h1 class="app-title">Eminfo - Instant Medical Info</h1>
+                    <a href="https://github.com/ChrisQuint0" target="_blank" class="dev-name">Christopher A. Quinto</a>
+                </div>
+            </div>
+
+            <div class="app-stats">
+                <div class="stat-item">
+                    <span class="stat-value">12 MB</span>
+                    <span class="stat-label">Size</span>
+                </div>
+            </div>
+
+            <div class="action-container">
+                <a href="Apk/eminfo-v1.0.apk" class="install-btn">Download APK</a>
+            </div>
+        </header>
+
+        <!-- Screenshots Section -->
+        <section class="screenshots-section">
+            <div class="screenshots-scroll-wrapper">
+                <div class="screenshots-container">
+                    <img src="Assets/Preview-Cover.png" alt="App Screenshot Cover" class="screenshot">
+                    <img src="Assets/Preview-1.png" alt="App Screenshot 1" class="screenshot">
+                    <img src="Assets/Preview-2.png" alt="App Screenshot 2" class="screenshot">
+                    <img src="Assets/Preview-3.png" alt="App Screenshot 3" class="screenshot">
+                    <img src="Assets/Preview-4.png" alt="App Screenshot 4" class="screenshot">
+                    <img src="Assets/Preview-5.png" alt="App Screenshot 5" class="screenshot">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="section-header">
+                <h2>About this app</h2>
+                <!-- Arrow removed as requested -->
+            </div>
+
+            <div class="description-content">
+                <p><strong>Eminfo</strong> is an offline-first Android application designed to provide first responders
+                    with instant access to critical medical and contact information. Built with modern Android
+                    technologies, it prioritizes speed, privacy, and accessibility, ensuring that life-saving data is
+                    available when it matters most—even without an internet connection.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Offline Storage:</strong> All data is stored locally on the device using Room Database.
+                        No internet connection is required, ensuring reliability in remote areas and total user privacy.
+                    </li>
+                    <li><strong>Comprehensive Profile:</strong> Detailed fields for:
+                        <ul>
+                            <li><strong>Personal Info:</strong> Name, DOB, Blood Type, Height.</li>
+                            <li><strong>Medical Info:</strong> Allergies, Medical Conditions, Current Medications.</li>
+                            <li><strong>Physician & Insurance:</strong> Contact details for primary care and insurance
+                                policy information.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Emergency QR Code:</strong> Generates a scannable QR code containing selected medical
+                        details.
+                        <ul>
+                            <li><strong>Customizable:</strong> Users can choose which fields to include in the QR code.
+                            </li>
+                            <li><strong>Shareable:</strong> Detailed options to share the image or save it to the
+                                gallery for printing or lock screen use.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Quick Access Widget:</strong> (In progress) Home screen usage for instant visibility.
+                    </li>
+                    <li><strong>Emergency Contacts:</strong> Dedicated section for primary emergency contacts.</li>
+                    <li><strong>Modern UI/UX:</strong> Built entirely with <strong>Jetpack Compose</strong> and
+                        <strong>Material 3</strong>, featuring a fluid, responsive design with "Hero" headers and
+                        intuitive navigation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer / Tags -->
+        <section class="tags-section">
+            <div class="tag">Medical</div>
+            <div class="tag">Emergency</div>
+            <div class="tag">Offline</div>
+            <div class="tag">Productivity</div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged screenshot">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
